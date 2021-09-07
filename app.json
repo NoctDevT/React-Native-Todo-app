@@ -13,6 +13,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
+      "androidNavigationBar": {
+        "visible": "sticky-immersive"
+      },
     "assetBundlePatterns": [
       "**/*"
     ],
