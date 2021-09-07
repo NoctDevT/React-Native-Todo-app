@@ -23,15 +23,6 @@ const themeReducer = (state, action) => {
 export function ThemeProvider(props) {
 
 
-    // const theme = getThemeDB();
-
-    // useEffect(() => {
-    //     console.log('SOME STUPID STUFF')
-    //     theme.then(req => JSON.parse(req)).then(json => { if (json !== null) console.log((json)) })
-    // }, [theme])
-
-
-
 
     const [state, dispatch] = useReducer(themeReducer, false);
 

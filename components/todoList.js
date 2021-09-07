@@ -160,8 +160,7 @@ const styles = (darkMode) => StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: darkMode ? '#110022' : '#FFF'    //Night mode
-    //Ligh mode
-    // backgroundColor: '#FFFFFF'
+
   },
   header: {
     position: 'relative',
@@ -192,8 +191,6 @@ const styles = (darkMode) => StyleSheet.create({
   },
   items: {
     marginTop: 30,
-    // height: 20,
-    // overflow: 'hidden'
   },
   writeTaskWrapper: {
     position: 'absolute',
