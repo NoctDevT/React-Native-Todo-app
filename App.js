@@ -6,24 +6,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { getUser } from './components/DbHandler/dbHandler'
 
 export default function App() {
-
-
-    // const clearAll = async () => {
-    //     try {
-    //         await AsyncStorage.clear()
-    //     } catch (e) {
-    //         // clear error
-    //     }
-
-    //     console.log('Done.')
-    // }
-
-
-    // useEffect(() => {
-    //     clearAll();
-    // }, [])
-
-
     return (
         <IsUserNameEntered />
     )
@@ -74,20 +56,6 @@ const IsUserNameEntered = () => {
     } else if (loaded === true && registered === true) {
         return <Navigation />
     }
-
-    // return <LoadingScreen />
-
-
-
-    // return (
-    //     !loaded && <SetUsername />,
-    //     (loaded && registered) && <SetUsername />,
-    //     (loaded && registered) && <Navigation />
-
-
-
-    // )
-
 }
 
 
@@ -104,7 +72,6 @@ const SetUsername = () => {
             await AsyncStorage.setItem('@userName', jsonValue)
             setComplete(true);
         } catch (e) {
-            // saving error
         }
     }
     return (
